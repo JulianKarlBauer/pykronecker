@@ -27,10 +27,10 @@ sudo docker run --rm \
 - [x] **Repository:** Is the source code for this software available at the [https://github.com/nickelnine37/pykronecker](https://github.com/nickelnine37/pykronecker)?
 - [x] **License:** Does the repository contain a plain-text LICENSE file with the contents of an [OSI approved](https://opensource.org/licenses/alphabetical) software license?
 - [x] **Contribution and authorship:** Has the submitting author (@nickelnine37) made major contributions to the software? Does the full list of paper authors seem appropriate and complete?
-- [ ] **Substantial scholarly effort:** Does this submission meet the scope eligibility described in the [JOSS guidelines](https://joss.readthedocs.io/en/latest/submitting.html#substantial-scholarly-effort)
-- [ ] **Data sharing:** If the paper contains original data, data are accessible to the reviewers. If the paper contains no original data, please check this item.
-- [ ] **Reproducibility:** If the paper contains original results, results are entirely reproducible by reviewers. If the paper contains no original results, please check this item.
-- [ ] **Human and animal research:** If the paper contains original data research on humans subjects or animals, does it comply with [JOSS's human participants research policy and/or animal research policy](https://joss.readthedocs.io/en/latest/policies.html?highlight=animal#joss-policies)? If the paper contains no such data, please check this item.
+- [x] **Substantial scholarly effort:** Does this submission meet the scope eligibility described in the [JOSS guidelines](https://joss.readthedocs.io/en/latest/submitting.html#substantial-scholarly-effort)
+- [x] **Data sharing:** If the paper contains original data, data are accessible to the reviewers. If the paper contains no original data, please check this item.
+- [x] **Reproducibility:** If the paper contains original results, results are entirely reproducible by reviewers. If the paper contains no original results, please check this item.
+- [x] **Human and animal research:** If the paper contains original data research on humans subjects or animals, does it comply with [JOSS's human participants research policy and/or animal research policy](https://joss.readthedocs.io/en/latest/policies.html?highlight=animal#joss-policies)? If the paper contains no such data, please check this item.
 
 
 ### Functionality
@@ -52,6 +52,20 @@ sudo docker run --rm \
 
 - [x] **Summary:** Has a clear description of the high-level functionality and purpose of the software for a diverse, non-specialist audience been provided?
 - [x] **A statement of need:** Does the paper have a section titled 'Statement of need' that clearly states what problems the software is designed to solve, who the target audience is, and its relation to other work?
-- [ ] **State of the field:** Do the authors describe how this software compares to other commonly-used packages?
+- [x] **State of the field:** Do the authors describe how this software compares to other commonly-used packages?
 - [x] **Quality of writing:** Is the paper well written (i.e., it does not require editing for structure, language, or writing quality)?
-- [ ] **References:** Is the list of references complete, and is everything cited appropriately that should be cited (e.g., papers, datasets, software)? Do references in the text use the proper [citation syntax](https://pandoc.org/MANUAL.html#extension-citations)?
+- [x] **References:** Is the list of references complete, and is everything cited appropriately that should be cited (e.g., papers, datasets, software)? Do references in the text use the proper [citation syntax](https://pandoc.org/MANUAL.html#extension-citations)?
+
+
+# Annswer
+
+### General checks
+General checks are passed.
+
+
+### Software paper
+
+The manuscript is well structured. The formulations are precise and catchy. For readers without direct prior knowledge, a basic understanding is created and the subject matter is well motivated. 
+For example, a reader with knowledge on tensor algebra but without direct prior experience with the Kronkecker product or the Kronecker sum of matrices is picked up on the content.
+PyKronecker is comprehensibly motivated as an efficient implementation of basic operations with a user-friendly interface.
+Formal and linguistic requirements are met and the list of references is diverse and appears to be complete.
