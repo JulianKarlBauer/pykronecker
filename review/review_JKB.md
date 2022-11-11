@@ -35,17 +35,17 @@ sudo docker run --rm \
 
 ### Functionality
 
-- [ ] **Installation:** Does installation proceed as outlined in the documentation?
-- [ ] **Functionality:** Have the functional claims of the software been confirmed?
-- [ ] **Performance:** If there are any performance claims of the software, have they been confirmed? (If there are no claims, please check off this item.)
+- [x] **Installation:** Does installation proceed as outlined in the documentation?
+- [x] **Functionality:** Have the functional claims of the software been confirmed?
+- [x] **Performance:** If there are any performance claims of the software, have they been confirmed? (If there are no claims, please check off this item.)
 
 ### Documentation
 
-- [ ] **A statement of need**: Do the authors clearly state what problems the software is designed to solve and who the target audience is?
-- [ ] **Installation instructions:** Is there a clearly-stated list of dependencies? Ideally these should be handled with an automated package management solution.
-- [ ] **Example usage:** Do the authors include examples of how to use the software (ideally to solve real-world analysis problems).
-- [ ] **Functionality documentation:** Is the core functionality of the software documented to a satisfactory level (e.g., API method documentation)?
-- [ ] **Automated tests:** Are there automated tests or manual steps described so that the functionality of the software can be verified?
+- [x] **A statement of need**: Do the authors clearly state what problems the software is designed to solve and who the target audience is?
+- [x] **Installation instructions:** Is there a clearly-stated list of dependencies? Ideally these should be handled with an automated package management solution.
+- [x] **Example usage:** Do the authors include examples of how to use the software (ideally to solve real-world analysis problems).
+- [x] **Functionality documentation:** Is the core functionality of the software documented to a satisfactory level (e.g., API method documentation)?
+- [x] **Automated tests:** Are there automated tests or manual steps described so that the functionality of the software can be verified?
 - [ ] **Community guidelines:** Are there clear guidelines for third parties wishing to 1) Contribute to the software 2) Report issues or problems with the software 3) Seek support
 
 ### Software paper
@@ -62,6 +62,28 @@ sudo docker run --rm \
 ### General checks
 General checks are passed.
 
+### Functionality
+Kronecker product of two random matrices of homogeneous dimension have been calculated
+by `pykronecker.KroneckerProduct([np.random.rand(n, n), np.random.rand(n, n)])`
+with values of `n` up to 150 in this
+[script](https://github.com/JulianKarlBauer/pykronecker/blob/review/review/performance_example_01.py).
+Equality check with `np.kron` and `pylops.Kronecker` pass.
+Performance claims of the paper can not be reproduced due to limited hardware performance.
+However, [`perfplot`](https://github.com/nschloe/perfplot) has been used in this [script](https://github.com/JulianKarlBauer/pykronecker/blob/review/review/performance_example_01.py) to
+compare `pykronecker` with alternative Python libraries mentioned in the paper.
+The performance of `pykronecker` performs well within these checks.
+
+Insert image here
+
+### Documentation
+The structure and scope of the documentation are good and appropriate for the size of the package.
+Installation are given.
+Examples are given and cover essential use cases.
+Tests are pass and are automated.
+However a note on how to run the tests, e.g., placed in directory `tests/README.md`
+is currently missing.
+This file might point towards this [Github-actions file](https://github.com/nickelnine37/pykronecker/blob/main/.github/workflows/tests.yml).
+Currently, [contributing instructions](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors) are missing.
 
 ### Software paper
 
@@ -69,3 +91,10 @@ The manuscript is well structured. The formulations are precise and catchy. For 
 For example, a reader with knowledge on tensor algebra but without direct prior experience with the Kronkecker product or the Kronecker sum of matrices is picked up on the content.
 PyKronecker is comprehensibly motivated as an efficient implementation of basic operations with a user-friendly interface.
 Formal and linguistic requirements are met and the list of references is diverse and appears to be complete.
+
+
+### Improvements / Recommendations
+- See merge-requests and issues mentioned above.
+- Please extend community guidelines on contribution and bug reporting.
+
+
