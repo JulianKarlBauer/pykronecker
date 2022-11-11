@@ -42,11 +42,24 @@ dependencies:
   - xz=5.2.6=h5eee18b_0
   - zlib=1.2.13=h5eee18b_0
   - pip:
+    - commonmark==0.9.1
+    - contourpy==1.0.6
+    - cycler==0.11.0
+    - fonttools==4.38.0
     - jax==0.3.24
     - jaxlib==0.3.24
+    - kiwisolver==1.4.4
+    - matplotlib==3.6.2
+    - matplotx==0.3.10
     - numpy==1.23.4
     - opt-einsum==3.3.0
+    - packaging==21.3
+    - perfplot==0.10.2
+    - pillow==9.3.0
     - pykronecker==0.1.1
+    - pyparsing==3.0.9
+    - python-dateutil==2.8.2
+    - rich==12.6.0
     - scipy==1.9.3
     - typing-extensions==4.4.0
 prefix: /home/julian/miniconda3/envs/pykronjax
