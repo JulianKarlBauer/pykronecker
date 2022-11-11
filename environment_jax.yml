@@ -57,6 +57,7 @@ dependencies:
     - perfplot==0.10.2
     - pillow==9.3.0
     - pykronecker==0.1.1
+    - pylops==2.0.0
     - pyparsing==3.0.9
     - python-dateutil==2.8.2
     - rich==12.6.0
