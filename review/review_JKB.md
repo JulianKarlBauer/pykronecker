@@ -79,7 +79,7 @@ Insert image here
 The structure and scope of the documentation are good and appropriate for the size of the package.
 Installation are given.
 Examples are given and cover essential use cases.
-Tests are pass and are automated.
+Tests are automated and pass on multiple Python versions.
 However a note on how to run the tests, e.g., placed in directory `tests/README.md`
 is currently missing.
 This file might point towards this [Github-actions file](https://github.com/nickelnine37/pykronecker/blob/main/.github/workflows/tests.yml).
