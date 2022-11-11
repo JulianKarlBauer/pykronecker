@@ -57,7 +57,7 @@ sudo docker run --rm \
 - [x] **References:** Is the list of references complete, and is everything cited appropriately that should be cited (e.g., papers, datasets, software)? Do references in the text use the proper [citation syntax](https://pandoc.org/MANUAL.html#extension-citations)?
 
 
-# Annswer
+# Answer
 
 ### General checks
 General checks are passed.
